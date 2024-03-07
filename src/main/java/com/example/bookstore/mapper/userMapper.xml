@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mabatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bookstore.mapper.UserMapper">
+    <!--添加用户-->
+    <insert id="insertUser" parameterType="muziuser">
+        insert into muziuser(Id,name,age,sex) values (#{Id},#{name},#{age},#{sex})
+    </insert>
+</mapper>

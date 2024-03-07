@@ -1,0 +1,22 @@
+Spring:
+  datasource:
+    url: jdbc:mysql://120.46.182.143:3306/user032db?serverTimezone=UTC
+    username: DB_USER032
+    password: DB_USER032@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 500000
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+server:
+  port: 8181
+
+mybatis:
+  type-aliases-package: com.example.bookstore.entity
